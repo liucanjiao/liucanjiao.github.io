@@ -1,3 +1,5 @@
+## [link to demo](http://www.liucanjiao.top/demo)
+## [link to demo2](http://www.liucanjiao.top/demo2)
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/liucanjiao/liucanjiao.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
