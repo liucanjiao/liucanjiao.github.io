@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<h1>Giu is unique.</h1>
+  {% for category in site.categories %}
+<h2 class="page-heading">{{ category | first }}</h2>
+<ul class="past">
+    {% for post in category.last %}
+  {% if post.o_link %}
+ <li class="arch-list"><a href="{{ post.o_link }}" target="_blank">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>
+  {% else %}
+ <li class="arch-list"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>  
+{% endif %}
+	{% endfor %}
+	
+</ul>
+{% endfor %}
