@@ -4,10 +4,9 @@ layout: default
 <h2>{{ site.data.samplelist.docs_list_title }}</h2>
 <ul>
    {% for item in site.data.samplelist.docs %}
-      <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+      <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}{{ item.index }}</a></li>
    {% endfor %}
 </ul>
-
 <h1>Giu is unique.</h1>
   {% for category in site.categories %}
 <h2 class="page-heading">{{ category | first }}</h2>

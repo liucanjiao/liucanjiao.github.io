@@ -3,9 +3,12 @@ docs:
 
 - title: Introduction
   url: introduction.html
+  index： 2
 
 - title: Configuration
   url: configuration.html
-
+  index： 1
+    
 - title: Deployment
   url: deployment.html
+  index： 0
