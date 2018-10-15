@@ -3,6 +3,90 @@ layout: default
 ---
 <h1>Giu is unique.</h1>
   {% for category in site.categories %}
+{% if category[0] == "视频报道" %}
+<h2 class="page-heading">{{ category | first }}</h2>
+<ul class="past">
+    {% for post in category.last %}
+  {% if post.o_link %}
+ <li class="arch-list"><a href="{{ post.o_link }}" target="_blank">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>
+  {% else %}
+ <li class="arch-list"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>  
+{% endif %}
+	{% endfor %}
+</ul>
+	{% endif %}
+  {% if category[0] == "可视化作品" %}
+<h2 class="page-heading">{{ category | first }}</h2>
+<ul class="past">
+    {% for post in category.last %}
+  {% if post.o_link %}
+ <li class="arch-list"><a href="{{ post.o_link }}" target="_blank">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>
+  {% else %}
+ <li class="arch-list"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>  
+{% endif %}
+	{% endfor %}
+</ul>
+	{% endif %}
+  {% if category[0] == "专题报道" %}
+<h2 class="page-heading">{{ category | first }}</h2>
+<ul class="past">
+    {% for post in category.last %}
+  {% if post.o_link %}
+ <li class="arch-list"><a href="{{ post.o_link }}" target="_blank">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>
+  {% else %}
+ <li class="arch-list"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>  
+{% endif %}
+	{% endfor %}
+</ul>
+	{% endif %}
+  {% if category[0] == "深度报道" %}
+<h2 class="page-heading">{{ category | first }}</h2>
+<ul class="past">
+    {% for post in category.last %}
+  {% if post.o_link %}
+ <li class="arch-list"><a href="{{ post.o_link }}" target="_blank">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>
+  {% else %}
+ <li class="arch-list"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>  
+{% endif %}
+	{% endfor %}
+</ul>
+	{% endif %}
+  {% if category[0] == "人物报道" %}
+<h2 class="page-heading">{{ category | first }}</h2>
+<ul class="past">
+    {% for post in category.last %}
+  {% if post.o_link %}
+ <li class="arch-list"><a href="{{ post.o_link }}" target="_blank">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>
+  {% else %}
+ <li class="arch-list"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>  
+{% endif %}
+	{% endfor %}
+</ul>
+	{% endif %}
+  {% if category[0] == "新闻评论" %}
+<h2 class="page-heading">{{ category | first }}</h2>
+<ul class="past">
+    {% for post in category.last %}
+  {% if post.o_link %}
+ <li class="arch-list"><a href="{{ post.o_link }}" target="_blank">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>
+  {% else %}
+ <li class="arch-list"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>  
+{% endif %}
+	{% endfor %}
+</ul>
+	{% endif %}
+  {% if category[0] == "推送编辑" %}
+<h2 class="page-heading">{{ category | first }}</h2>
+<ul class="past">
+    {% for post in category.last %}
+  {% if post.o_link %}
+ <li class="arch-list"><a href="{{ post.o_link }}" target="_blank">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>
+  {% else %}
+ <li class="arch-list"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>  
+{% endif %}
+	{% endfor %}
+</ul>
+	{% endif %}
   {% if category[0] == "通讯" %}
 <h2 class="page-heading">{{ category | first }}</h2>
 <ul class="past">
@@ -13,6 +97,7 @@ layout: default
  <li class="arch-list"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>  
 {% endif %}
 	{% endfor %}
-	{% endif %}
 </ul>
+	{% endif %}
+
 {% endfor %}
