@@ -3,5 +3,5 @@ layout: default
 ---
 <h1>Giu is unique.</h1>
   {% for category in site.categories %}
- <p> {{ category }}</p>
+ <p> {{ category | first }}</p>
 {% endfor %}
