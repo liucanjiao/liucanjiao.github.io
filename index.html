@@ -4,21 +4,6 @@ layout: default
 <h1>Giu is unique.</h1>
 
 <h2 class="page-heading">{{ site.categories[0] | first }}</h2>
-<ul class="past">
-    {% for post in site.categories[0].last %}
-  {% if post.o_link %}
- <li class="arch-list"><a href="{{ post.o_link }}" target="_blank">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>
-  {% else %}
- <li class="arch-list"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>  
-{% endif %}
-	{% endfor %}
-	<h2 class="page-heading">{{ site.categories[1] | first }}</h2>
-<ul class="past">
-    {% for post in site.categories[1].last %}
-  {% if post.o_link %}
- <li class="arch-list"><a href="{{ post.o_link }}" target="_blank">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>
-  {% else %}
- <li class="arch-list"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>&nbsp;<time>{{ post.date | date:"%d %b" }}</time></li>  
-{% endif %}
-	{% endfor %}
+
+
 </ul>
