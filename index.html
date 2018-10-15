@@ -2,9 +2,7 @@
 layout: default
 ---
 <h1>Giu is unique.</h1>
-
- {% assign categorys = site.categories | sort: 'title'  %}
- {% for category in categories %} 
+  {% for category in site.categories %}
 <h2 class="page-heading">{{ category | first }}</h2>
 <ul class="past">
     {% for post in category.last %}
