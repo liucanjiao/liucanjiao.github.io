@@ -3,7 +3,7 @@ layout: default
 ---
 <h1>Giu is unique.</h1>
   <!-- {% for category in site.categories.sort('name') %} -->
-  {% assign doclist = site.categories | sort: 'name'  %}
+  {% assign doclist = site.categories | sort: 'title'  %}
   
 <h2 class="page-heading">{{ category | first }}</h2>
 <ul class="past">
